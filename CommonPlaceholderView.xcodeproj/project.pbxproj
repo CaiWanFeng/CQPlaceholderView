@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D935751D1ECFDBE4001B757D /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = D935751C1ECFDBE4001B757D /* UIView+Toast.m */; };
 		D990D26A1EC9862D00FD5968 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D990D2691EC9862D00FD5968 /* main.m */; };
 		D990D26D1EC9862D00FD5968 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D990D26C1EC9862D00FD5968 /* AppDelegate.m */; };
 		D990D2701EC9862D00FD5968 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D990D26F1EC9862D00FD5968 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		D990D2781EC9862D00FD5968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D990D2761EC9862D00FD5968 /* LaunchScreen.storyboard */; };
 		D990D2831EC9862D00FD5968 /* CommonPlaceholderViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D990D2821EC9862D00FD5968 /* CommonPlaceholderViewTests.m */; };
 		D990D28E1EC9862D00FD5968 /* CommonPlaceholderViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D990D28D1EC9862D00FD5968 /* CommonPlaceholderViewUITests.m */; };
+		D990D29E1EC986D200FD5968 /* CQPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D990D29D1EC986D200FD5968 /* CQPlaceholderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D935751B1ECFDBE4001B757D /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		D935751C1ECFDBE4001B757D /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		D990D2651EC9862D00FD5968 /* CommonPlaceholderView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonPlaceholderView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D990D2691EC9862D00FD5968 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D990D26B1EC9862D00FD5968 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		D990D2891EC9862D00FD5968 /* CommonPlaceholderViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonPlaceholderViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D990D28D1EC9862D00FD5968 /* CommonPlaceholderViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonPlaceholderViewUITests.m; sourceTree = "<group>"; };
 		D990D28F1EC9862D00FD5968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D990D29C1EC986D200FD5968 /* CQPlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQPlaceholderView.h; sourceTree = "<group>"; };
+		D990D29D1EC986D200FD5968 /* CQPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQPlaceholderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D935751A1ECFDBE4001B757D /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				D935751B1ECFDBE4001B757D /* UIView+Toast.h */,
+				D935751C1ECFDBE4001B757D /* UIView+Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		D935751E1ECFDD97001B757D /* 第三方库 */ = {
+			isa = PBXGroup;
+			children = (
+				D935751A1ECFDBE4001B757D /* Toast */,
+			);
+			name = "第三方库";
+			sourceTree = "<group>";
+		};
 		D990D25C1EC9862D00FD5968 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +124,8 @@
 		D990D2671EC9862D00FD5968 /* CommonPlaceholderView */ = {
 			isa = PBXGroup;
 			children = (
+				D935751E1ECFDD97001B757D /* 第三方库 */,
+				D990D29B1EC986A000FD5968 /* CQPlaceholderView（轮子） */,
 				D990D26B1EC9862D00FD5968 /* AppDelegate.h */,
 				D990D26C1EC9862D00FD5968 /* AppDelegate.m */,
 				D990D26E1EC9862D00FD5968 /* ViewController.h */,
@@ -138,6 +163,15 @@
 				D990D28F1EC9862D00FD5968 /* Info.plist */,
 			);
 			path = CommonPlaceholderViewUITests;
+			sourceTree = "<group>";
+		};
+		D990D29B1EC986A000FD5968 /* CQPlaceholderView（轮子） */ = {
+			isa = PBXGroup;
+			children = (
+				D990D29C1EC986D200FD5968 /* CQPlaceholderView.h */,
+				D990D29D1EC986D200FD5968 /* CQPlaceholderView.m */,
+			);
+			name = "CQPlaceholderView（轮子）";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D990D29E1EC986D200FD5968 /* CQPlaceholderView.m in Sources */,
 				D990D2701EC9862D00FD5968 /* ViewController.m in Sources */,
 				D990D26D1EC9862D00FD5968 /* AppDelegate.m in Sources */,
+				D935751D1ECFDBE4001B757D /* UIView+Toast.m in Sources */,
 				D990D26A1EC9862D00FD5968 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +552,7 @@
 				D990D2941EC9862D00FD5968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D990D2951EC9862D00FD5968 /* Build configuration list for PBXNativeTarget "CommonPlaceholderViewTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +561,7 @@
 				D990D2971EC9862D00FD5968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D990D2981EC9862D00FD5968 /* Build configuration list for PBXNativeTarget "CommonPlaceholderViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +570,7 @@
 				D990D29A1EC9862D00FD5968 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
