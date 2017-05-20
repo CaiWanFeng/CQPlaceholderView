@@ -26,7 +26,8 @@ typedef NS_ENUM(NSInteger, CQPlaceholderViewType) {
 @protocol CQPlaceholderViewDelegate <NSObject>
 
 /** 占位图的重新加载按钮点击时回调 */
-- (void)placeholderView:(CQPlaceholderView *)placeholderView reloadButtonDidClick:(UIButton *)sender;
+- (void)placeholderView:(CQPlaceholderView *)placeholderView
+   reloadButtonDidClick:(UIButton *)sender;
 
 @end
 
@@ -47,6 +48,8 @@ typedef NS_ENUM(NSInteger, CQPlaceholderViewType) {
  @param delegate 占位图的代理方
  @return 指定frame、类型和代理方的占位图
  */
-- (instancetype)initWithFrame:(CGRect)frame type:(CQPlaceholderViewType)type delegate:(id)delegate;
+- (instancetype)initWithFrame:(CGRect)frame
+                         type:(CQPlaceholderViewType)type
+                     delegate:(id)delegate;
 
 @end
